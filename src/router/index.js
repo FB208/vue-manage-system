@@ -40,6 +40,11 @@ export default new Router({
                     meta: { title: '基本表单' }
                 },
                 {
+                    path: '/richform',
+                    component: resolve => require(['../components/page/Form/RichForm.vue'], resolve),
+                    meta: { title: '富表单' }
+                },
+                {
                     // 富文本编辑器组件
                     path: '/editor',
                     component: resolve => require(['../components/page/VueEditor.vue'], resolve),
